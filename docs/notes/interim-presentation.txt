@@ -1,0 +1,63 @@
+Introduction
+Sign language recognition systems are critical for deaf and hard-of-hearing people.
+Sign language has always been inadequately funded by technology.
+Recent breakthroughs in artificial intelligence and computer vision enable the construction of 
+excellent sign language recognition systems.
+It is essential for fostering a more fair and accessible world.
+
+Problem statement:
+There are around ten extensively used sign languages in India, each of which has a distinct hand 
+shape, making communication with the deaf increasingly challenging.So, our initiative seeks to 
+overcome this obstacle and make it easier to communicate.
+
+Aim and Objective:
+The goal of this project is to translate Indian sign languages to facilitate communication. 
+One of the key advantages of this project is that it may be used for any sign language with the 
+usage of the appropriate dataset. 
+
+Methododlogy:
+it consists of two main programs 
+
+the first program mainly consists of 24 steps in total
+Configure camera settings.
+Load the hand detection model.
+Load the hand gesture classification model.
+Read the labels for the classification model.
+Initialize coordinate history.
+Calculate bounding boxes and landmarks.
+Pre-process the landmarks.
+Log the pre-processed landmarks.
+
+Import necessary libraries and modules.
+Define the main function.
+Parse command-line arguments.
+Configure camera settings.
+Load the hand detection model.
+Read the labels for the classification model.
+Initialize FPS calculation.
+Initialize coordinate history.
+Enter the main loop for video processing.
+Process key inputs.
+Capture frames from the camera.
+Flip the frames for mirror display.
+Convert the frames to RGB format.
+Process the frames using the hand detection model.
+Iterate over the detected hand landmarks.
+Calculate bounding boxes and landmarks.
+Pre-process the landmarks.
+Log the pre-processed landmarks.
+Classify the hand gestures.
+Draw bounding boxes, landmarks, and information text.
+Draw FPS and mode information.
+Display the processed frames on the screen.
+Release the camera and close all windows.
+
+Once the program collects the required coordinates of the laandmarks of each of the class it is 
+then fed into a feed forward neural network 
+
+Conclusion:
+We can conclude that this project provides a real time translation of the Isl signs.Some of the 
+future scope of this project is that since this model is converted into a TFlite model , it can 
+be operated on smaller devices such as mobile with small processing capacity.Moreover this can 
+be developed not only for ISL BUT FOR ANY OTHER sign LANGUAGES used around the worls by updating the
+dataset. 

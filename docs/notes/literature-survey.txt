@@ -1,0 +1,104 @@
+Sign language is a visual and gestural communication system used primarily by 
+individuals who are Deaf or hard of hearing. It is a complex and structured 
+language that relies on handshapes, movements, facial expressions, and body 
+language to convey meaning.Sign language is an important communication tool that 
+can help bridge barriers between people who can speak verbally and people who 
+cannot.Thus we are creating a translation system so that we can undertand better
+without having to learn the language
+
+Our main objectives are to construct a mobile app that can convert ISL to text 
+in real time and Develop Python coding skills to design and develop machine learning/deep 
+learning models. 
+
+In the first research article, the user will have access to a mobile platform trained 
+using a CNN or Convolution neural network and a dataset comprising all of the widely 
+used ISL phrases and vocabulary. The user will control this using a selfie stick and 
+takes photos in real-time. They were successful 93% of the time, but Some of the issues 
+encountered were the use of a selfie stick and performing Sign language looked to be 
+challenging, and the photos obtained appeared to be blurry.Furthermore, a huge 
+amount of data was required during training,due to which The rate of processing and 
+recognition
+was slower.In addition, it took up a lot of storage space on the phone.
+
+The second piece discusses an African sign language effort. The concept presented in 
+this article was the idea that the user would have a mobile application and be using 
+a glove with sensors that connected to the phone via Bluetooth. SVM, or singular 
+value matrix, was employed as an image recognition classification approach. Even 
+though it achieved 99% success and had a storage capacity of no more than 15MB, it 
+lacked mobility and the overall equipment was expensive for both the application 
+developer and the user.
+
+The third literature survey was from a book called where they made a code only using
+Python and the various libraries such as OpenCV and created dataset in TensorFlow
+keras.TensorFlow is an open-source machine learning framework developed by Google. It 
+is designed to facilitate the development and deployment of machine learning and deep 
+learning models.Basically a dataset was created in tensor containing all the data 
+regarding
+ISL , it was then imported into a python program , a Gui was required for easy interface.
+From this we learned how to start our project.
+
+THe fourth paper is similar to the first paper were they have used CNN doe sign 
+recognition along with pretrained models such as SSD MobileNetV2 .THey created a 
+dataset in Tensorflow,used Object detection API which is a Tensorflow API(Application 
+programming interface) to locate objects in an image and identify it, Uses OpenCV 
+of Python and LabelImg .But the model produced only 70-80% accuracy due to environmental 
+disturbance such as lighting sensitivity, closure where some fingers can be out 
+of field of view, sign boundary detection i.e when one sign ends and next begins.
+
+The fifth paper was also similar to the first paper were the user had to use a selfie stick 
+but the learning technique used was different and more advanced version of CNN which is ANN
+(Artificial Neural Network) integrated into a Samsung galaxy phone that yielded a 90% 
+accuracy with execution time of 0.5221 seconds.The difficulties faced was the same as that of
+the first paper
+
+In the sixth paper, it discusses the comparison between ResNet50-BiLSTM , BiLSTM in this 
+context refers to Bidirectional Long Short term memory which is used in RNN that is 
+Recurrent Neural Network , which is another machine learning architecture used for 
+natural language processing.In this paper ResNet50 yielded more accurate result compared 
+to MobileNet , about 99% but the computational time was lesser for MobileNet and MobileNet
+was more compatiblw with the phone than ResNEt.From this paper, we decided to use MobileNet 
+since we are looking forward to create a project that is more accessible, affordable and
+portable .
+
+The 7th paper is a web search about MobileNet, since we have decided to use MobileNet , 
+we decided to further investigate its usage and its various models , The algorithm as u can
+see uses the dataset from tensorflow, imports it into python code and processes and integrates
+the output into MobileNet,It starts to make prediction of the object in the image and a
+final result is produced.We are considering this as one of the base codes to further
+improve our code. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problem statement:Since Indian sign language is a complex and structured language , having different handshapes , movements and facial expressions, is often found to be a problem because
+of the many gestures that have to be remembered in order to communicate with the deaf community.
+Purpose and need of the project: To create a translation system so that we can undertand better without having to learn the language.
+Reference:
+N. Mohamed, M. B. Mustafa and N. Jomhari, "A Review of the Hand Gesture Recognition System: Current Progress and Future Directions," in IEEE Access, vol. 9, pp. 157422-157436, 2021, doi: 10.1109/ACCESS.2021.3129650.
+X. Xie, G. Xie, X. Xu, L. Cui and J. Ren, "Automatic Image Segmentation With Superpixels and Image-Level Labels," in IEEE Access, vol. 7, pp. 10999-11009, 2019, doi: 10.1109/ACCESS.2019.2891941.
+R. Cui, H. Liu and C. Zhang, "A Deep Neural Framework for Continuous Sign Language Recognition by Iterative Training," in IEEE Transactions on Multimedia, vol. 21, no. 7, pp. 1880-1891, July 2019, doi: 10.1109/TMM.2018.2889563.
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+Aim of the project:To develop an instrument that interprets sign language into spoken English 
+Significance:It can be challenging to communicate with a disabled person who is deaf or mute, particularly if you don't know sign language.We are creating a device to solve this issue in 
+              order to facilitate communication.
+
+Literature review:
+
+S3DRGF: Spatial 3-D Relational Geometric Features for 3-D Sign Language Representation and Recognition
+Published in: IEEE Signal Processing Letters ( Volume: 26, Issue: 1, January 2019)
+Page(s): 169 - 173
+Date of Publication: 28 November 2018 
+ISSN Information:
+Print ISSN: 1070-9908
+Electronic ISSN: 1558-2361
+INSPEC Accession Number: 18279144
+DOI: 10.1109/LSP.2018.2883864
+Publisher: IEEE
+disadvantage:
+Uses motion capture sensors that consists of 17 sensors ,full body suit and a strap set with battery life of 6 hrs with range of 25m. This is only for motion capture and requires
+other equipments for storing the database containing the language materials.Highly qualitative and accurate in representing a sign (or action) as spatio temporal skeletal joint information
+but is very costly.
+
+
+Inertial Motion Sensing Glove for Sign Language Gesture Acquisition and Recognition
+Published in: IEEE Sensors Journal ( Volume: 16, Issue: 16, August 2016)
+Page(s): 6310 - 6316
+Date of Publication: 22 June 2016 
+ISSN Information:
+INSPEC Accession Number: 16156983
+DOI: 10.1109/JSEN.2016.2583542
+Publisher: IEEE
+Disadvantages:Inertial-based systems also have drawbacks. The sensors are mounted on the entire upper limb, which often introduces limitation in hand movement. Additionally, when using a 
+wired solution, the user’s freedom of movement may be limited.
+
+
+A Prototype for Mexican Sign Language Recognition and Synthesis in Support of a Primary Care Physician
+Published in: IEEE Access ( Volume: 10)
+Page(s): 127620 - 127635
+Date of Publication: 05 December 2022 
+Electronic ISSN: 2169-3536
+INSPEC Accession Number: 22386081
+DOI: 10.1109/ACCESS.2022.3226696
+Publisher: IEEE
+disadvantage:it uses microsoft kinect which have the following disadvantages:
+Microsoft discontinued the production of Kinect devices for consumers since it didn't achieve the level of commercial success that Microsoft had hoped for.
+The Kinect requires a certain amount of physical space to function properly
+Depending on the application and hardware setup, there could be some latency (delay) in the Kinect's tracking and responsiveness
+
+what we intent to do:
+Translator device that converts sign language into a spoken language. This device will be based on an ML model that can recognize the different sign language gestures for accurate 
+translation.
+
+Expected outcomes:
+a device that recognizes ASL(American Sign Language)
+efficient mode of communication
+less number of equipments
+affordable
+portable
+flexible to learn any sign language
+
+Required resources:
+hardware:-
+1)raspberry pi
+2)RPi camera
+Speaker/amplifier
+Software
+Ml models for training suxh as TensorFlow, Keras, PyTorch, Google’s Teachable Machine
+Raspberry pi software(Javascript)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
