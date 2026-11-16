@@ -1,0 +1,41 @@
+# Dataset: shipped gzipped as keypoint.csv.gz, unpacked locally by
+# scripts/prepare_dataset.py. The unpacked copy is also what app.py appends to
+# in logging mode, so keep it out of version control.
+model/keypoint_classifier/keypoint.csv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

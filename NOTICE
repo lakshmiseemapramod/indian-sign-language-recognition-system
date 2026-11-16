@@ -1,0 +1,59 @@
+Indian Sign Language Recognition System
+
+This product includes software developed as a derivative work of:
+
+    hand-gesture-recognition-using-mediapipe
+    Copyright (c) 2021 Kazuhito Takahashi
+    https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe
+    Licensed under the Apache License, Version 2.0
+
+    English-translated fork:
+    https://github.com/kinivi/hand-gesture-recognition-mediapipe
+    Licensed under the Apache License, Version 2.0
+
+Retained from the upstream project
+----------------------------------
+  * MediaPipe Hands integration and the real-time capture loop
+  * Landmark pre-processing (wrist-relative coordinates, flattening, normalisation)
+  * Landmark and bounding-box drawing code
+  * utils/cvfpscalc.py (FPS counter)
+  * The KeyPointClassifier TFLite wrapper
+  * The overall structure of the training notebook and its TFLite quantisation step
+
+Modifications made in this work
+-------------------------------
+  * Retargeted the classifier from the upstream sample gesture set to Indian Sign
+    Language fingerspelling: 36 classes covering the digits 0-9 and the letters A-Z.
+  * Collected a new training dataset of 117,139 labelled landmark vectors by live
+    webcam capture (model/keypoint_classifier/keypoint.csv.gz), replacing the
+    upstream sample data, and retrained the classifier on it. The trained weights
+    (keypoint_classifier.hdf5) and quantised model (keypoint_classifier.tflite)
+    in this repository are the results of that training.
+  * Rewrote model/keypoint_classifier/keypoint_classifier_label.csv for the 36 ISL
+    classes.
+  * Extended select_mode() in app.py so that the a-z keys map to class ids 10-35,
+    allowing the letter classes to be recorded in logging mode; widened the class-id
+    range accepted by logging_csv() accordingly.
+  * Removed the point-history (dynamic finger gesture) classifier and its associated
+    model, dataset, notebook and drawing code, which are not used for static
+    fingerspelling recognition.
+  * Added project documentation: report, conference abstract, block diagram,
+    flowcharts, design document, implementation notes and literature survey
+    (docs/).
+  * Added scripts/prepare_dataset.py, requirements.txt and this notice.
+
+Third-party components
+----------------------
+MediaPipe is developed by Google and licensed under the Apache License, Version 2.0.
+TensorFlow is licensed under the Apache License, Version 2.0.
+OpenCV is licensed under the Apache License, Version 2.0.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+file except in compliance with the License. You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
