@@ -13,8 +13,6 @@ as a quantised TFLite model. No gloves, depth cameras or motion-capture rigs are
 the aim was a translator that runs on cheap, portable hardware.
 
 <p align="center">
-  <img src="docs/images/demo-letter-K.jpg" width="32%" alt="Recognising the letter K">
-  <img src="docs/images/demo-digit-9.jpg" width="32%" alt="Recognising the digit 9">
   <img src="docs/images/demo-improved-run.jpg" width="32%" alt="Recognition run">
 </p>
 
