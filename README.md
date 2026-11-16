@@ -3,9 +3,6 @@
 Real-time recognition of Indian Sign Language (ISL) fingerspelling — the ten digits
 and the twenty-six letters of the alphabet — from an ordinary webcam.
 
-*Lakshmi Seema Pramod and Anjali S Kumar · supervised by Prof. Reshna S ·
-Department of Electronics and Communication*
-
 The system extracts 21 hand landmarks per frame with [MediaPipe Hands](https://developers.google.com/mediapipe),
 normalises them into a scale- and translation-invariant feature vector, and classifies
 them with a small feed-forward neural network trained in TensorFlow/Keras and deployed
