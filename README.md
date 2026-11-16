@@ -13,7 +13,7 @@ as a quantised TFLite model. No gloves, depth cameras or motion-capture rigs are
 the aim was a translator that runs on cheap, portable hardware.
 
 <p align="center">
-  <img src="docs/images/demo-improved-run.jpg" width="32%" alt="Recognition run">
+  <img src="docs/results/classification-report.png" width="32%" alt="Recognition run">
 </p>
 
 ## Why
